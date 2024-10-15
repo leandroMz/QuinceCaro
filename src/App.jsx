@@ -3,12 +3,12 @@ import { Home } from './routes/Home';
 import './App.css';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);  // Controla si la carta se abrió
-  const audioRef = useRef(null);  // Referencia al audio
+  const [isOpen, setIsOpen] = useState(false);
+  const audioRef = useRef(null);
 
   const handleOpen = () => {
     setIsOpen(true);
-    audioRef.current.play();  // Reproducir música al abrir
+    audioRef.current.play();
   };
 
   return (
