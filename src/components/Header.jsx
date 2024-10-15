@@ -5,7 +5,7 @@ export const Header = () => {
     <div className={Styles.textContainer}>
       <h2 className={Styles.eventTitle}>¡Estás Invitado!</h2>
       <p className={Styles.invitationText}>
-        Nos encantaría que seas parte de este momento tan especial para nosotros, ¡falta poco!
+        ME encantaría que seas parte de este momento tan especial para mí, ¡falta poco!
       </p>
     </div>
   )
