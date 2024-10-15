@@ -4,3 +4,17 @@
   text-decoration: none;
   list-style: none;
 }
+
+.envelope {
+  width: 100vw; /* Ocupa el ancho completo del viewport */
+  height: 100vh; /* Ocupa el alto completo del viewport */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.envelope-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen ocupe toda el área sin distorsionarse */
+}
