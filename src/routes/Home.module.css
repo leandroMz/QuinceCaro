@@ -1,0 +1,26 @@
+.musicButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: rgba(255, 165, 0, 0.8); /* Naranja con algo de transparencia */
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px; /* Tamaño adecuado para el ícono */
+  border-radius: 50%; /* Hace el botón circular */
+  z-index: 1000; /* Asegura que esté sobre todo */
+}
+
+.musicButton:hover {
+  background-color: rgba(255, 165, 0, 1);
+}
+
+.desktopMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  color: red;
+}

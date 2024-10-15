@@ -1,0 +1,17 @@
+.coolerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.coolerImage {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.coolerText {
+    font-size: 16px;
+    color: #555;
+}

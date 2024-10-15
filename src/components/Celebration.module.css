@@ -1,0 +1,80 @@
+.celebrationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif; /* O usa la fuente que prefieras */
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .gifImage {
+    width: 60px; /* Tamaño reducido del GIF */
+    height: auto;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .spanText{
+    font-size: 1rem;
+
+  }
+  
+  .separator {
+    margin: 0 10px;
+    color: #ccc;
+  }
+  
+  .address {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .locationButton {
+    background-color: #d18f77;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .locationButton:hover {
+    background-color: #b87361;
+  }
+  

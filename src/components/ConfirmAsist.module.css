@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-family: 'Cursive', sans-serif;
+    font-size: 24px;
+    color: #8e793e; /* Color similar al de la imagen */
+    margin-bottom: 20px;
+  }
+  
+  .whatsappButton {
+    background-color: #fff;
+    border: 2px solid #8e793e;
+    color: #8e793e;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsappButton:hover {
+    background-color: #8e793e;
+    color: #fff;
+  }
+  
+  .heartIcon {
+    color: #d4a373; /* Color similar al corazón de la imagen */
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .signature {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 40px;
+    color: #8e793e;
+  }
+  
