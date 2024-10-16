@@ -6,7 +6,7 @@
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
-    font-family: 'Arial', sans-serif; /* O usa la fuente que prefieras */
+    font-family: 'Arial', sans-serif;
   }
   
   .iconContainer {
@@ -17,7 +17,7 @@
   }
   
   .gifImage {
-    width: 60px; /* Tamaño reducido del GIF */
+    width: 60px;
     height: auto;
   }
   
@@ -65,7 +65,8 @@
   }
   
   .locationButton {
-    background-color: #d18f77;
+    /* background-color: #d18f77; */
+    background-color: #91bbe2;
     color: white;
     border: none;
     padding: 10px 20px;

@@ -12,13 +12,18 @@
     font-family: 'Cursive', sans-serif;
     font-size: 24px;
     color: #8e793e;
+    color: #91bbe2;
     margin-bottom: 20px;
   }
   
   .whatsappButton {
     background-color: #fff;
     border: 2px solid #8e793e;
+    border: 2px solid #91bbe2;
+
+    
     color: #8e793e;
+    color: #91bbe2;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -29,11 +34,13 @@
   
   .whatsappButton:hover {
     background-color: #8e793e;
+    background-color: #91bbe2;
     color: #fff;
   }
   
   .heartIcon {
-    color: #d4a373; /* Color similar al corazón de la imagen */
+    color: #d4a373;
+    color: #91bbe2;
     font-size: 24px;
     margin: 10px 0;
   }
@@ -48,5 +55,6 @@
     font-family: 'Dancing Script', cursive; 
     font-size: 40px;
     color: #8e793e;
+    color: aqua;
   }
   

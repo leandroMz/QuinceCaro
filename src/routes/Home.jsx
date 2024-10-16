@@ -13,7 +13,7 @@ import { FaPlay, FaPause } from 'react-icons/fa';
 
 export const Home = ({ audioRef }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
-  const [isPlaying, setIsPlaying] = useState(true); // La música empieza automáticamente en play
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const toggleMusic = () => {
     if (isPlaying) {
@@ -40,7 +40,6 @@ export const Home = ({ audioRef }) => {
     <>
       {isMobile ? (
         <div>
-          {/* Botón de pausa/reproducción */}
           <button className={styles.musicButton} onClick={toggleMusic}>
             {isPlaying ? <FaPause /> : <FaPlay />}
           </button>
@@ -50,7 +49,7 @@ export const Home = ({ audioRef }) => {
           <Celebration />
           <DressCode />
           <SecondaryImages />
-          <Aditional />
+          {/* <Aditional /> */}
           <ConfirmAsist />
           <Footer />
         </div>
