@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react';
 import { Aditional } from "../components/Aditional";
 import { Celebration } from "../components/Celebration";
@@ -10,10 +11,12 @@ import { SecondaryImages } from "../components/SecondaryImages";
 import { Time } from "../components/Time";
 import styles from './Home.module.css';
 import { FaPlay, FaPause } from 'react-icons/fa';
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 export const Home = ({ audioRef }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [showPulse, setShowPulse] = useState(true);
 
   const toggleMusic = () => {
     if (isPlaying) {
@@ -29,10 +32,18 @@ export const Home = ({ audioRef }) => {
       setIsMobile(window.innerWidth <= 600);
     };
 
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowPulse(false);
+      }
+    };
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -43,6 +54,14 @@ export const Home = ({ audioRef }) => {
           <button className={styles.musicButton} onClick={toggleMusic}>
             {isPlaying ? <FaPause /> : <FaPlay />}
           </button>
+
+          {showPulse && (
+            <div className={styles.pulse}>
+              <MdKeyboardDoubleArrowDown size={30} />
+              <p>DESLIZA</p>
+            </div>
+          )}
+
           <MainImage />
           <Header />
           <Time />
