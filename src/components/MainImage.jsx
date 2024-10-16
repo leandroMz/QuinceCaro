@@ -4,7 +4,7 @@ export const MainImage = () => {
     return (
         <div className={Styles.mainContainer}>
             <div className={Styles.imageContainer}>
-                <img src="/s.jpg" alt="Quinceañera" className={Styles.mainImage} />
+                <img src="/caro.png" alt="Quinceañera" className={Styles.mainImage} />
             </div>
         </div>
     );

@@ -17,11 +17,10 @@ export const ConfirmAsist = () => {
       <FaHeart className={styles.heartIcon} />
       
       <p className={styles.message}>
-        {/* Los mejores momentos de la vida merecen ser compartidos. */}
-        Los momentos más importantes se viven mejor en compañía.
+        Los mejores momentos de la vida merecen ser compartidos.
       </p>
 
-      <p className={styles.signature}>Juliana</p>
+      <p className={styles.signature}>Carolina</p>
     </div>
   );
 };

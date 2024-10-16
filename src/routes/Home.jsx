@@ -49,7 +49,7 @@ export const Home = ({ audioRef }) => {
           <Celebration />
           <DressCode />
           <SecondaryImages />
-          {/* <Aditional /> */}
+          <Aditional />
           <ConfirmAsist />
           <Footer />
         </div>
