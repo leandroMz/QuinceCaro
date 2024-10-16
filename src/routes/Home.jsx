@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { Aditional } from "../components/Aditional";
-import { Celebration } from "../components/Celebration";
 import { ConfirmAsist } from "../components/ConfirmAsist";
-import { DressCode } from "../components/DressCode";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { MainImage } from "../components/MainImage";
-import { SecondaryImages } from "../components/SecondaryImages";
 import { Time } from "../components/Time";
 import styles from './Home.module.css';
 import { FaPlay, FaPause } from 'react-icons/fa';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+
+const Celebration = lazy(() => import("../components/Celebration"));
+const DressCode = lazy(() => import("../components/DressCode"));
+const SecondaryImages = lazy(() => import("../components/SecondaryImages"));
 
 export const Home = ({ audioRef }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
@@ -65,9 +66,12 @@ export const Home = ({ audioRef }) => {
           <MainImage />
           <Header />
           <Time />
-          <Celebration />
-          <DressCode />
-          <SecondaryImages />
+          <Suspense fallback={<div className={styles.loadingSpinner}>Cargando...</div>}>
+            <Celebration />
+            <DressCode />
+            <SecondaryImages />
+          </Suspense>
+
           <Aditional />
           <ConfirmAsist />
           <Footer />
