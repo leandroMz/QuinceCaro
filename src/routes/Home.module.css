@@ -33,7 +33,7 @@
   align-items: center;
   animation: pulse 0.5s infinite;
   position: fixed;
-  bottom: 300px;
+  bottom: 400px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 16px;
