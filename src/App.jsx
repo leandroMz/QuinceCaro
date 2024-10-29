@@ -9,7 +9,9 @@ function App() {
 
   const handleOpen = () => {
     setIsOpen(true);
-    audioRef.current.play();
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
