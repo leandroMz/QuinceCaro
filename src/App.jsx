@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { Home } from './routes/Home';
-import './App.css';
 import { Envelope } from './components/Envelope';
+import './App.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
