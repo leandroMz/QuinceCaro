@@ -17,6 +17,7 @@ export const Home = ({ audioRef }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
   const [isPlaying, setIsPlaying] = useState(true);
   const [showPulse, setShowPulse] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const toggleMusic = () => {
     if (isPlaying) {
@@ -47,6 +48,10 @@ export const Home = ({ audioRef }) => {
     };
   }, []);
 
+  const handleMainImageLoad = () => {
+    setIsLoaded(true);
+  };
+  
   return (
     <>
       {isMobile ? (
