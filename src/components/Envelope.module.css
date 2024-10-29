@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  perspective: 1500px;
+  perspective: 1000px;
 }
 
 .envelope {
@@ -29,20 +29,20 @@
 
 .envelopeLeftFlap {
   left: 0;
-  transform: rotateY(0deg); /* Cerrado */
+  transform: rotateY(0deg); 
 }
 
 .envelopeRightFlap {
   right: 0;
-  transform: rotateY(0deg); /* Cerrado */
+  transform: rotateY(0deg);
 }
 
 .envelope.open .envelopeLeftFlap {
-  transform: rotateY(-150deg); /* Abre hacia la izquierda */
+  transform: rotateY(-150deg);
 }
 
 .envelope.open .envelopeRightFlap {
-  transform: rotateY(150deg); /* Abre hacia la derecha */
+  transform: rotateY(150deg);
 }
 
 .sealContainer {
