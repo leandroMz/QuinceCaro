@@ -8,8 +8,8 @@ export const SecondaryImages = () => {
     <div className={Styles.imageSecondaryContainer}>
       <>
         <div className={Styles.headSecondary}>
-          <img src={img1} alt="Quinceañera 1" className={Styles.image} />
-          <img src={img2} alt="Quinceañera 2" className={Styles.image} />
+          <img src={img1} alt="Quinceañera 1" className={Styles.image2} />
+          <img src={img2} alt="Quinceañera 2" className={Styles.image2} />
         </div>
         <img src={img3} alt="Quinceañera 3" className={Styles.image} />
       </>

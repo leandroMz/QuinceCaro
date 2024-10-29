@@ -16,7 +16,12 @@
 .imageSecondaryContainer img:nth-child(1) {
     grid-column: 1 / span 2;
 }
-
+.image2{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
 .image {
     width: 100%;
     height: auto;
