@@ -19,6 +19,7 @@ export const Home = ({ audioRef }) => {
   const [showPulse, setShowPulse] = useState(true);
 
   const toggleMusic = () => {
+    console.log('Toggling music:', isPlaying);
     if (isPlaying) {
       audioRef.current.pause();
     } else {
@@ -26,24 +27,20 @@ export const Home = ({ audioRef }) => {
     }
     setIsPlaying(!isPlaying);
   };
+  
 
   useEffect(() => {
-    // Para esconder el efecto de deslizamiento después de cierto scroll
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setShowPulse(false);
       }
     };
 
-    // Listener para scroll
     window.addEventListener('scroll', handleScroll);
-
-    // Sincronización inicial del estado de isPlaying con el audio
     if (audioRef.current) {
       audioRef.current.play();
     }
 
-    // Limpieza de eventos
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -56,6 +53,7 @@ export const Home = ({ audioRef }) => {
       </div>
     );
   }
+  console.log('Is Mobile:', isMobileDevice, 'Is Playing:', isPlaying);
 
   return (
     <div>
