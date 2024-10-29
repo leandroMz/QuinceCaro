@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Home } from './routes/Home';
 import './App.css';
+import { Envelope } from './components/Envelope';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,7 @@ function App() {
   return (
     <>
       {!isOpen ? (
-        <div className="envelope" onClick={handleOpen}>
-          <img src="/imagen.JPG" alt="Abrir" className="envelope-image" />
-        </div>
+        <Envelope onOpen={handleOpen} />
       ) : (
         <Home audioRef={audioRef} />
       )}

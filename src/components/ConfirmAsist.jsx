@@ -3,7 +3,8 @@ import styles from './ConfirmAsist.module.css';
 
 export const ConfirmAsist = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5493777814003', '_blank');
+    const message = encodeURIComponent("Hola, escribo para confirmar mi asistencia al XV de Carolina, Mi nombre es: ");
+    window.open(`https://wa.me/5493782439037?text=${message}`, '_blank');
   };
 
   return (

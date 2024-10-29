@@ -2,14 +2,14 @@
   position: fixed;
   top: 10px;
   right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
-  background-color: #e2b091;
+  background-color: #b9b6b47e;
   border: none;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 50%;
   z-index: 1000;
 }
