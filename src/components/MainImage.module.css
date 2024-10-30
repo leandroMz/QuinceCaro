@@ -1,5 +1,5 @@
 .mainContainer {
-  position: relative;
+  position: relative; 
   overflow: hidden;
 }
 
@@ -12,4 +12,21 @@
 .mainImage {
   width: 100%;
   height: auto;
+}
+
+/* Estilo para el overlay */
+.overlay {
+  position: absolute;
+  top: 60%; /* Empieza a partir del 60% de la altura del contenedor */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Llega hasta el final del contenedor */
+  background: rgba(255, 255, 255, 0); /* Color blanco transparente */
+  transition: background 0.5s ease; /* Suaviza la transición del color */
+  z-index: 1; /* Asegúrate de que esté por encima de la imagen */
+}
+
+/* Animar el overlay para que se vuelva blanco al 95% */
+.mainContainer:hover .overlay {
+  background: rgba(255, 255, 255, 1); /* Cambia a blanco opaco */
 }
