@@ -14,7 +14,7 @@ import { FaPlay, FaPause } from 'react-icons/fa';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 export const Home = ({ audioRef }) => {
-  const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  // const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   const [isPlaying, setIsPlaying] = useState(true);
   const [showPulse, setShowPulse] = useState(true);
 
@@ -46,14 +46,13 @@ export const Home = ({ audioRef }) => {
     };
   }, [audioRef]);
 
-  if (!isMobileDevice) {
-    return (
-      <div className={styles.desktopMessage}>
-        Solo puedes abrir desde un celular.
-      </div>
-    );
-  }
-  console.log('Is Mobile:', isMobileDevice, 'Is Playing:', isPlaying);
+  // if (!isMobileDevice) {
+  //   return (
+  //     <div className={styles.desktopMessage}>
+  //       Solo puedes abrir desde un celular.
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>

@@ -1,6 +1,6 @@
-import img1 from '/img3.jpg';
-import img2 from '/img2.jpg';
-import img3 from '/3.png';
+import img3 from '/img3.jpg';
+import img2 from '/2.png';
+import img1 from '/3.png';
 import Styles from './SecondaryImages.module.css';
 
 export const SecondaryImages = () => {
